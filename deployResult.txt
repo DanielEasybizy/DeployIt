@@ -2,7 +2,7 @@ Microsoft (R) Build Engine version 4.0.30319.33440
 [Microsoft .NET Framework, version 4.0.30319.34014]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 7/15/2014 11:34:53 AM.
+Build started 7/16/2014 8:09:15 AM.
      1>Project "C:\WebSites\DeployIt\DeployIt.sln" on node 1 (default targets).
      1>ValidateSolutionConfiguration:
          Building solution configuration "Release|Any CPU".
@@ -39,10 +39,14 @@ Build started 7/15/2014 11:34:53 AM.
        PreTransformWebConfig:
          Found The following for Config tranformation:
          Web.config
-         Skip copying Web.config to obj\Release\TransformWebConfig\original\Web.config, File obj\Release\TransformWebConfig\original\Web.config is up to date
+         Copying Web.config to obj\Release\TransformWebConfig\original\Web.config.
+         Deleting file "obj\Release\TransformWebConfig\transformed\Web.config".
          Skip copying C:\WebSites\DeployIt\DeployIt\Web.Release.config to obj\Release\TransformWebConfig\assist\Web.config, File obj\Release\TransformWebConfig\assist\Web.config is up to date
        TransformWebConfigCore:
-       Skipping target "TransformWebConfigCore" because all output files are up-to-date with respect to the input files.
+         Transforming Source File: C:\WebSites\DeployIt\DeployIt\Web.config
+           Applying Transform File: C:\WebSites\DeployIt\DeployIt\Web.Release.config
+           Output File: obj\Release\TransformWebConfig\transformed\Web.config
+         Transformation succeeded
        PostTransformWebConfig:
          Transformed Web.config using C:\WebSites\DeployIt\DeployIt\Web.Release.config into obj\Release\TransformWebConfig\transformed\Web.config.
        PipelineTransformPhase:
@@ -203,14 +207,14 @@ Build started 7/15/2014 11:34:53 AM.
          Skip copying C:\WebSites\DeployIt\packages\System.Spatial.5.2.0\lib\net40\ru\System.Spatial.resources.dll to obj\Release\Package\PackageTmp\bin\ru\System.Spatial.resources.dll, File obj\Release\Package\PackageTmp\bin\ru\System.Spatial.resources.dll is up to date
          Skip copying C:\WebSites\DeployIt\packages\System.Spatial.5.2.0\lib\net40\zh-Hans\System.Spatial.resources.dll to obj\Release\Package\PackageTmp\bin\zh-Hans\System.Spatial.resources.dll, File obj\Release\Package\PackageTmp\bin\zh-Hans\System.Spatial.resources.dll is up to date
          Skip copying C:\WebSites\DeployIt\packages\System.Spatial.5.2.0\lib\net40\zh-Hant\System.Spatial.resources.dll to obj\Release\Package\PackageTmp\bin\zh-Hant\System.Spatial.resources.dll, File obj\Release\Package\PackageTmp\bin\zh-Hant\System.Spatial.resources.dll is up to date
-         Skip copying obj\Release\TransformWebConfig\transformed\Web.config to obj\Release\Package\PackageTmp\Web.config, File obj\Release\Package\PackageTmp\Web.config is up to date
+         Copying obj\Release\TransformWebConfig\transformed\Web.config to obj\Release\Package\PackageTmp\Web.config.
        PipelinePreDeployCopyAllFilesToOneFolder:
          Publish Pipeline Deploy phase Stage PipelinePreDeployCopyAllFilesToOneFolder
        WebFileSystemPublish:
          Skip copying obj\Release\Package\PackageTmp\favicon.ico to C:\WebSites\DeployItTest\favicon.ico, File C:\WebSites\DeployItTest\favicon.ico is up to date
          Skip copying obj\Release\Package\PackageTmp\Global.asax to C:\WebSites\DeployItTest\Global.asax, File C:\WebSites\DeployItTest\Global.asax is up to date
          Skip copying obj\Release\Package\PackageTmp\packages.config to C:\WebSites\DeployItTest\packages.config, File C:\WebSites\DeployItTest\packages.config is up to date
-         Skip copying obj\Release\Package\PackageTmp\Web.config to C:\WebSites\DeployItTest\Web.config, File C:\WebSites\DeployItTest\Web.config is up to date
+         Copying obj\Release\Package\PackageTmp\Web.config to C:\WebSites\DeployItTest\Web.config.
          Skip copying obj\Release\Package\PackageTmp\Areas\HelpPage\HelpPage.css to C:\WebSites\DeployItTest\Areas\HelpPage\HelpPage.css, File C:\WebSites\DeployItTest\Areas\HelpPage\HelpPage.css is up to date
          Skip copying obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Web.config to C:\WebSites\DeployItTest\Areas\HelpPage\Views\Web.config, File C:\WebSites\DeployItTest\Areas\HelpPage\Views\Web.config is up to date
          Skip copying obj\Release\Package\PackageTmp\Areas\HelpPage\Views\_ViewStart.cshtml to C:\WebSites\DeployItTest\Areas\HelpPage\Views\_ViewStart.cshtml, File C:\WebSites\DeployItTest\Areas\HelpPage\Views\_ViewStart.cshtml is up to date
@@ -364,9 +368,49 @@ Build started 7/15/2014 11:34:53 AM.
        PreAutoParameterizationWebConfigConnectionStrings:
          Skip copying obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Web.config to obj\Release\CSAutoParameterize\original\Areas\HelpPage\Views\Web.config, File obj\Release\CSAutoParameterize\original\Areas\HelpPage\Views\Web.config is up to date
          Skip copying obj\Release\Package\PackageTmp\Views\Web.config to obj\Release\CSAutoParameterize\original\Views\Web.config, File obj\Release\CSAutoParameterize\original\Views\Web.config is up to date
-         Skip copying obj\Release\Package\PackageTmp\Web.config to obj\Release\CSAutoParameterize\original\Web.config, File obj\Release\CSAutoParameterize\original\Web.config is up to date
+         Copying obj\Release\Package\PackageTmp\Web.config to obj\Release\CSAutoParameterize\original\Web.config.
+         Deleting file "obj\Release\CSAutoParameterize\transformed\Web.config".
        AutoParameterizationWebConfigConnectionStringsCore:
-       Skipping target "AutoParameterizationWebConfigConnectionStringsCore" because all output files are up-to-date with respect to the input files.
+         Deleting file "obj\Release\CSAutoParameterize\transformed\Areas\HelpPage\Views\Web.config".
+         Deleting file "obj\Release\CSAutoParameterize\transformed\Views\Web.config".
+         Deleting file "obj\Release\CSAutoParameterize.parameters.xml".
+         Transforming Source File: C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Web.config
+           Applying Transform File: <?xml version="1.0"?>
+                 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+                   <connectionStrings>
+                     <add
+                       connectionString="{% token='$(ReplacableToken_#(parameter)_#(tokennumber))' xpathlocator='name' parameter='$(name)-Web.config Connection String' description='$(name) Connection String used in web.config by the application to access the database.' defaultValue='$(connectionString)' tags='SqlConnectionString' %}"
+                       xdt:Transform="SetTokenizedAttributes(connectionString)" xdt:SupressWarnings="True" />
+                   </connectionStrings>
+                 </configuration>
+           No element in the source document matches '/configuration/connectionStrings'
+           Not executing SetTokenizedAttributes (transform line 6, 15)
+           Output File: obj\Release\CSAutoParameterize\transformed\Areas\HelpPage\Views\Web.config
+         Transformation succeeded
+         Transforming Source File: C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Views\Web.config
+           Applying Transform File: <?xml version="1.0"?>
+                 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+                   <connectionStrings>
+                     <add
+                       connectionString="{% token='$(ReplacableToken_#(parameter)_#(tokennumber))' xpathlocator='name' parameter='$(name)-Web.config Connection String' description='$(name) Connection String used in web.config by the application to access the database.' defaultValue='$(connectionString)' tags='SqlConnectionString' %}"
+                       xdt:Transform="SetTokenizedAttributes(connectionString)" xdt:SupressWarnings="True" />
+                   </connectionStrings>
+                 </configuration>
+           No element in the source document matches '/configuration/connectionStrings'
+           Not executing SetTokenizedAttributes (transform line 6, 15)
+           Output File: obj\Release\CSAutoParameterize\transformed\Views\Web.config
+         Transformation succeeded
+         Transforming Source File: C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Web.config
+           Applying Transform File: <?xml version="1.0"?>
+                 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+                   <connectionStrings>
+                     <add
+                       connectionString="{% token='$(ReplacableToken_#(parameter)_#(tokennumber))' xpathlocator='name' parameter='$(name)-Web.config Connection String' description='$(name) Connection String used in web.config by the application to access the database.' defaultValue='$(connectionString)' tags='SqlConnectionString' %}"
+                       xdt:Transform="SetTokenizedAttributes(connectionString)" xdt:SupressWarnings="True" />
+                   </connectionStrings>
+                 </configuration>
+           Output File: obj\Release\CSAutoParameterize\transformed\Web.config
+         Transformation succeeded
        PostAutoParameterizationWebConfigConnectionStrings:
          Auto ConnectionString Transformed obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Web.config into obj\Release\CSAutoParameterize\transformed\Areas\HelpPage\Views\Web.config.
          Auto ConnectionString Transformed obj\Release\Package\PackageTmp\Views\Web.config into obj\Release\CSAutoParameterize\transformed\Views\Web.config.

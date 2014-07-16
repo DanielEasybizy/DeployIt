@@ -126,7 +126,6 @@ C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Content\themes\base
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Content\themes\base\minified\jquery.ui.theme.min.css
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\favicon.ico
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Global.asax
-C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Web.config
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Shared\_Layout.cshtml
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Help\Index.cshtml
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml
@@ -166,7 +165,6 @@ C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Images\orderedList7
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Images\orderedList8.png
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Images\orderedList9.png
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Scripts\_references.js
-C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Views\Web.config
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Views\_ViewStart.cshtml
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Views\Home\Index.cshtml
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Views\Shared\Error.cshtml
@@ -221,4 +219,6 @@ C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\bin\ko\System.Spati
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\bin\ru\System.Spatial.resources.dll
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\bin\zh-Hans\System.Spatial.resources.dll
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\bin\zh-Hant\System.Spatial.resources.dll
+C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Areas\HelpPage\Views\Web.config
+C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Views\Web.config
 C:\WebSites\DeployIt\DeployIt\obj\Release\Package\PackageTmp\Web.config
