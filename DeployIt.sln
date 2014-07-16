@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeployIt", "DeployIt\DeployIt.csproj", "{9FF1FB94-B558-4E75-AC39-D02DD7354B5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeployIt.Tests", "DeployIt.Tests\DeployIt.Tests.csproj", "{BF93E625-7560-4B96-8DC4-8108BFC83A72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{899630D4-D42C-4FA8-9DE4-87C5E020A9A3}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +20,10 @@ Global
 		{9FF1FB94-B558-4E75-AC39-D02DD7354B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FF1FB94-B558-4E75-AC39-D02DD7354B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FF1FB94-B558-4E75-AC39-D02DD7354B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF93E625-7560-4B96-8DC4-8108BFC83A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF93E625-7560-4B96-8DC4-8108BFC83A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF93E625-7560-4B96-8DC4-8108BFC83A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF93E625-7560-4B96-8DC4-8108BFC83A72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
